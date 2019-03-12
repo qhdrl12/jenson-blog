@@ -1,11 +1,24 @@
+/**
+ * Gatsby 사이트 구성 옵션은 본 파일에 정의함 - https://www.gatsbyjs.org/docs/gatsby-config/#
+ * 1. siteMetadata - 사이트 전반의 공통 데이터를 정의 합니다.
+ * 2. plugins - gatsby api를 구현하는 node.js 패키지
+ * 3. pathPrefix
+ * 4. polyfill - 낡은 브라우저에서 모던 코드를 쓸수 있도록 도와줌
+ * 5. mapping
+ * 6. proxy
+ * 7. developMiddleware
+ *
+ * @type {{siteMetadata: {title: string, author: string, description: string, siteUrl: string, social: {twitter: string}}, plugins: *[]}}
+ */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
+    title: `Jenson Starter Blog`,
+    author: `Jenson.lee`,
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `kakaopay`,
+      facebook: `kakaopay`,
     },
   },
   plugins: [
@@ -74,5 +87,5 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-  ],
+  ]
 }
